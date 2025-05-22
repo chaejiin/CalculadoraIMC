@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Calcular o IMC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="description" content="Site que calcula o Índice de Massa Corpórea (IMC)">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/calcular_imc.css">
+    <script src="js/calcular_imc.js"></script>    
+</head>
+<body>
+	<header>
+        <a class="botao" href="index.html">Página Inicial</a>
+        <a class="botao" href="como_calcula_imc.html">Como é calculado o IMC</a>        
+        <a class="botao" href="sobre.html">Sobre</a>   
+	</header>
+    <main>
+        <div>
+            <h1 class="titulo">Calcular o IMC</h1>
+            <p>Página desenvolvida para calcular o Índice de Massa Corporativa (IMC)</p>        
+            <div class="formulario_css">
+                <form id="formulario">
+                    <label id="peso">Peso (ex.: 58.6):
+                    <input name="peso" type="number" step="0.1"></label><br>
+                    <label id="altura">Altura (ex.: 1.85):
+                    <input name="altura" type="number" step="0.01"></label><br>
+                    <label id="sexo">Sexo:
+                    <select name="sexo">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select></label><br>
+                    <label id="imc">IMC:
+                    <input name="imc" type="text" disabled="disabled"></label>
+                </form>
+                <button id="calcularbotao" class="botao" onclick="calcular();">Calcular</button>
+            </div>
+            <div class="div_resultado">
+                <p>Seu IMC é: </p> 
+                <p id="resultado">Valor com resultado do IMC aparecera aqui!</p>
+                <p>Resultado: </p> 
+                <p class="resultado_texto_css" id="resultado_texto">A Situação aparecera aqui!</p>
+            </div>
+        </div>   
+    </main>	 
+
+    <footer class="main_footer container">
+        <div class="main_footer_copy">
+            <p class="m-b-footer">Calculo do IMC - 2025, todos os direitos reservados.</p> 
+            <p class="by"><i class="icon icon-heart-3"></i>Desenvolvido por: <a href="https://www.github.com/chaejiin" title="Leandro Chaejiin Cassimiro Assano">Leandro Chaejiin Cassimiro Assano.</a></p>
+        </div>
+    </footer>
+</body>
+</html>

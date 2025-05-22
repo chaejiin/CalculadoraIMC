@@ -1,0 +1,15 @@
+Utilizando o padrão BEM 
+Gif no Giphy
+
+<header>
+Página Inicial
+Como é feito o calculo do IMC
+Sobre
+<header> 
+
+Todo mundo pode e deve se mexer - balão de fala POUCO ACIMA DO PESO 
+Sempre em movimento - balão de fala 
+De volta à rotina de treino - balão de fala ACIMA DO PESO
+Por que não se divertir enquanto queima calorias? - balão de fala
+Atividade física e saúde mental andam de mãos dadas - balão de fala 
+Treinar não precisa ser chato! - Balão de fala 

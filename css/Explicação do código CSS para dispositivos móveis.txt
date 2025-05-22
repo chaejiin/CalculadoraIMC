@@ -1,0 +1,66 @@
+Sugestões para ajustar código CSS para dispositivos móveis:
+
+1. Use uma folha de estilo responsiva: Adicione uma folha de estilo responsiva usando a tag meta viewport na seção head do seu HTML. Isso ajuda o navegador a definir o tamanho correto da tela do dispositivo e adaptar o layout da página em conformidade. Aqui está um exemplo:
+
+```
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      /* Seu código CSS aqui */
+   </style>
+</head>
+```
+
+2. Use tamanhos de fonte e espaçamentos de linha responsivos: Para garantir que o conteúdo seja legível em telas menores, use tamanhos de fonte e espaçamentos de linha que se ajustem automaticamente a diferentes tamanhos de tela. Aqui está um exemplo:
+
+```
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #707070;
+    background-color: #F1F1F1;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+}
+```
+
+Este exemplo usa uma regra de mídia para definir estilos diferentes para telas menores que têm no máximo 767 pixels de largura.
+
+3. Use largura máxima para elementos: Use a propriedade CSS "max-width" para limitar a largura dos elementos em telas menores. Isso impede que o conteúdo fique muito esticado e difícil de ler. Aqui está um exemplo:
+
+```
+div {
+    margin: 0 auto;
+    border: 1px solid #E6E6E6;
+    padding: 16px 2px;
+    max-width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    color: #444444;
+}
+```
+
+4. Use layout flexível: Use um layout flexível para que o conteúdo se ajuste automaticamente a diferentes tamanhos de tela. Por exemplo, em vez de definir uma largura fixa para um elemento, use a propriedade CSS "flex" para permitir que ele se ajuste ao tamanho da tela. Aqui está um exemplo:
+
+```
+.formulario_css {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 2px;
+    max-width: 90%;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+```
+
+Com esses ajustes o conteúdo pode ser visto em dispositivos móveis!
