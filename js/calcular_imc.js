@@ -1,3 +1,24 @@
+const fala = document.getElementById('balao');
+const personagem = document.getElementById('personagem');
+
+let estado = 0;
+
+fala.addEventListener('click', () => {
+  estado++;
+  if (estado === 1) {
+    fala.textContent = 'Todo mundo pode e deve se mexer.';
+    personagem.src = './image/poucoacima.gif'; // balão de fala POUCO ACIMA DO PESO
+  } else if (estado === 2) {
+    fala.innerHTML = '<img src="./pedropedro.gif" alt="Mensagem" style="max-width: 150px;" />';
+    personagem.src = './eu3.png'; // balão de fala ACIMA DO PESO
+
+  } else {
+    fala.textContent = 'Hiii! Clique em mim pra ouvir algo bom ^^';
+    personagem.src = './image/giphy.gif'; // volta ao normal
+    estado = 0;
+  }
+});
+
 function calcular() {
     // Obtendo o formulário pelo ID
     var formulario = document.getElementById("formulario");

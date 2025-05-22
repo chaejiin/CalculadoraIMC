@@ -71,6 +71,38 @@ main, .div_resultado{
     100% { background-position: 0 0; } 
 } 
 
+.personagem-container {
+    position: absolute;
+    bottom: -150px;
+    right: 20px;
+    text-align: center;
+  }
+  
+  #personagem {
+    width: 100px;
+  }
+  
+  .balao-fala {
+    background: white;
+    border: 3px solid #333;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    position: relative;
+  }
+  
+  .balao-fala::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+
 .titulo, footer {
     text-align: center;
     color: #444444;
