@@ -2,70 +2,77 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <title>Calcular o IMC</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <meta name="description" content="Explicação de como é feito o calculo do Índice de Massa Corpórea (IMC)">    
+    <title>Como é calculado o IMC?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explicação atualizada de como é feito o cálculo do Índice de Massa Corpórea (IMC) com base científica.">
+
+    <!-- Fonte Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/calcular_imc.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-	<header>
-        <a class="botao botao1" href="index.html">Página Inicial</a>
-        <a class="botao botao2" href="como_calcula_imc.html">Como é calculado o IMC</a>        
-        <a class="botao botao5" href="sobre.html">Sobre</a>   
-	</header>	
-	<section>
-		<h1 style="text-align: center;">Como é calculado o IMC</h1>
-		<p>O Índice de Massa Corpórea (IMC) é uma medida utilizada para avaliar o peso corporal de uma pessoa em relação à sua altura. 
-			Ele é calculado dividindo-se o peso em quilogramas pela altura em metros ao quadrado. 
-		<p>A fórmula matemática para calcular o IMC é: IMC = Peso ÷ (Altura × Altura).</p>
-		<p>Exemplo de como calcular o IMC: IMC = 80 kg ÷ (1,80 m × 1,80 m) = 24,69 kg/m<sup>2</sup>, resultado = (Peso ideal).</p>
-		<p>Com base no resultado do cálculo do IMC, é possível classificar o peso em diferentes categorias de acordo com a tabela abaixo:</p>
-	
-			<ul>
-				<li>IMC abaixo de 18,5: Peso abaixo do normal</li>
-				<li>IMC entre 18,5 e 24,9: Peso normal</li>
-				<li>IMC entre 25 e 29,9: Sobrepeso</li>
-				<li>IMC entre 30 e 34,9: Obesidade grau I</li>
-				<li>IMC entre 35 e 39,9: Obesidade grau II</li>
-				<li>IMC igual ou acima de 40: Obesidade grau III (obesidade mórbida)</li>
-			</ul>
-			<h4>A obesidade é classificada em três graus de acordo com o IMC</h4>
-			<ol>
-				<li>Obesidade grau I: IMC entre 30 e 34,9
-					<p>Nesse grau, o indivíduo apresenta um aumento moderado de peso e já pode começar a apresentar sintomas como cansaço e falta de ar após esforços físicos.</p>	
-				</li>
-				<li>Obesidade grau II: IMC entre 35 e 39,9
-					<p>Nesse grau, o indivíduo apresenta um aumento significativo de peso e pode ter complicações de saúde, como apneia do sono, problemas articulares e maior risco de doenças cardiovasculares.</p>	
-				</li>
-				<li>Obesidade grau III (obesidade mórbida): IMC igual ou superior a 40
-					<p>Nesse grau, o indivíduo apresenta um excesso de peso muito elevado, o que pode levar a complicações graves de saúde, como diabetes tipo 2, hipertensão arterial, doenças cardiovasculares, apneia do sono, problemas articulares e maior risco de alguns tipos de câncer.</p>
-				</li>			
-	
-			</ol>		
-			<p>Vale ressaltar que o IMC é apenas uma medida de referência e não deve ser usada como diagnóstico de saúde. </p>
-			<p>Algumas pessoas podem ter uma massa muscular maior e, portanto, apresentar um IMC mais elevado, mas sem necessariamente ter excesso de gordura corporal. 
-				Além disso, fatores como idade, sexo e etnia também devem ser levados em consideração na avaliação do peso corporal.</p>			
-			<h4 class="vermelho">Importante:</h4>	
-			<p>Após obter o resultado do Cálculo IMC não tome decisões por conta própria, utilize o IMC apenas como base.</p>		
-			<p>É importante consultar um profissional de saúde para avaliar a saúde geral e a necessidade de mudanças no estilo de vida.</p>
-			<h4 class="vermelho">Saiba mais acessando:</h4>			
-			<p><a href="https://aps.saude.gov.br/ape/promocaosaude/excesso" target="_blank">Ministério da Saúde</a></p>
-			<p><a href="https://www.portal.cardiol.br/post/a-rela%C3%A7%C3%A3o-entre-obesidade-e-o-aumento-de-hipertens%C3%A3o-em-crian%C3%A7as-e-adolescentes" target="_blank">Sociedade Brasileira de Cardiologia</a></p>
-			<p><a href="https://www.who.int/news-room/events/detail/2020/03/04/default-calendar/world-obesity-day" target="_blank">Organização Mundial da Saúde</a></p>
-	</section>
-	
-	<footer class="main_footer container">
-   
-		<div class="main_footer_copy">
-			
-			<p class="m-b-footer">Calculo do IMC - 2025, todos os direitos reservados.</p> 
-			<p class="by"><i class="icon icon-heart-3"></i>Desenvolvido por: <a href="https://www.github.com/chaejiin" title="Leandro Chaejiin Cassimiro Assano">Leandro Chaejiin Cassimiro Assano.</a></p>
-		
-		</div>
-	
-	</footer>
+
+    <header class="header">
+        <a class="header__link" href="index.html">Página Inicial</a>
+        <a class="header__link" href="como_calcula_imc.html">O que é IMC?</a>
+        <a class="header__link" href="sobre.html">Sobre</a>
+    </header>
+
+    <main class="main">
+        <h1 class="main__title">Como é calculado o IMC?</h1>
+
+        <p>O <strong>Índice de Massa Corporal (IMC)</strong> é uma medida internacional reconhecida pela <a href="https://www.who.int/" target="_blank">Organização Mundial da Saúde (OMS)</a> para avaliar se uma pessoa está dentro, abaixo ou acima do peso ideal, em relação à sua altura.</p>
+
+        <p>O cálculo do IMC é feito através da fórmula:</p>
+
+        <p><strong>IMC = Peso (kg) ÷ [Altura (m)]²</strong></p>
+
+        <p><strong>Exemplo:</strong> Uma pessoa que pesa 80 kg e mede 1,80 m terá o IMC calculado assim:</p>
+        <p>IMC = 80 ÷ (1,80 × 1,80) = 24,69 kg/m² (classificação: peso normal)</p>
+
+        <h2>Classificação do IMC para adultos (OMS):</h2>
+
+        <ul>
+            <li><strong>IMC abaixo de 18,5</strong>: Abaixo do peso</li>
+            <li><strong>IMC entre 18,5 e 24,9</strong>: Peso normal (eutrofia)</li>
+            <li><strong>IMC entre 25,0 e 29,9</strong>: Sobrepeso</li>
+            <li><strong>IMC entre 30,0 e 34,9</strong>: Obesidade grau I</li>
+            <li><strong>IMC entre 35,0 e 39,9</strong>: Obesidade grau II</li>
+            <li><strong>IMC igual ou superior a 40,0</strong>: Obesidade grau III (obesidade mórbida)</li>
+        </ul>
+
+        <h3>Sobre a classificação de obesidade:</h3>
+        <ol>
+            <li><strong>Obesidade grau I (IMC 30,0 a 34,9):</strong> risco moderado para doenças cardiovasculares, diabetes tipo 2 e hipertensão.</li>
+            <li><strong>Obesidade grau II (IMC 35,0 a 39,9):</strong> risco alto para complicações metabólicas e cardiovasculares.</li>
+            <li><strong>Obesidade grau III (IMC ≥ 40,0):</strong> risco muito elevado para morte precoce, câncer, insuficiência cardíaca, diabetes severa e outros.</li>
+        </ol>
+
+        <h2>⚠️ Limitações do IMC:</h2>
+        <p>O IMC é uma ferramenta de triagem populacional. Ele <strong>não diferencia massa magra (músculo), massa óssea e gordura corporal</strong>. Portanto, atletas ou pessoas muito musculosas podem apresentar IMC elevado sem ter excesso de gordura.</p>
+
+        <h4 class="vermelho">🚩 Importante:</h4>
+        <p>O IMC é uma <strong>ferramenta de triagem</strong> e não substitui avaliação médica, nutricional ou física.</p>
+        <p>Use este índice apenas como um sinal inicial. Sempre consulte um médico, nutricionista ou profissional de saúde capacitado.</p>
+
+        <h3>🔗 Fontes e Referências:</h3>
+        <ul>
+            <li><a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank">Organização Mundial da Saúde (OMS) — Obesidade e sobrepeso</a></li>
+            <li><a href="https://scholar.google.com/" target="_blank">Google Acadêmico</a> — Pesquise: "Limitações do IMC composição corporal"</li>
+            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11306271/" target="_blank">Obesity and BMI Limitations (PMC - NCBI)</a></li>
+            <li><a href="https://www.sciencedirect.com/science/article/pii/S2213858721000067" target="_blank">BMI and body composition relationships (ScienceDirect)</a></li>
+            <li><a href="https://aps.saude.gov.br/ape/promocaosaude/excesso" target="_blank">Ministério da Saúde do Brasil</a></li>
+        </ul>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__copy">Cálculo do IMC - 2025, todos os direitos reservados.</p>
+        <p class="footer__author">Desenvolvido por: <a href="https://www.github.com/chaejiin" title="Leandro Chaejiin Cassimiro Assano">Leandro Chaejiin Cassimiro Assano</a></p>
+    </footer>
+
 </body>
 </html>

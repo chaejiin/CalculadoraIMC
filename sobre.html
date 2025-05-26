@@ -3,33 +3,56 @@
 <head>
     <meta charset="utf-8">
     <title>Sobre</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <meta name="description" content="Sobre do site que calcula o Índice de Massa Corpórea (IMC)">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informações sobre o criador do site e esclarecimentos sobre o cálculo do IMC.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/calcular_imc.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-	<header>
-        <a class="botao botao1" href="index.html">Página Inicial</a>
-        <a class="botao botao2" href="como_calcula_imc.html">Como é calculado o IMC</a>        
-        <a class="botao botao5" href="sobre.html">Sobre</a>    
-	</header>	
-        <section class="intro">
-            <h1 style="text-align: center;">Sobre</h1>            
-            <p>Olá, meu nome é Luciano Rovanni do Nascimento e sou professor de programação web. 
-            Acredito que a tecnologia tem o poder de transformar a vida das pessoas e é por isso que me dedico a ensinar tecnologia para todos aqueles que desejam aprender.</p>            
-            <p>Criei esta página para meus alunos aprenderem como criar uma página responsiva e com acessibilidade para calcular o IMC. 
-            <p>Sites responsivos são aqueles que adaptam o tamanho das suas páginas (alteração do layout) ao tamanho das telas que estão sendo exibidos, como as telas de celulares e tablets.</p>
-            <p>O Índice de Massa Corpórea (IMC) é uma medida utilizada para avaliar o peso corporal de uma pessoa em relação à sua altura.</p>
-            <p>Com a ajuda desta página, meus alunos poderão aprender a criar uma página web responsiva e acessível que permite calcular o IMC de forma rápida e fácil.</p>
-        </section>
-        <footer class="main_footer container">
-            <div class="main_footer_copy">
-                <p class="m-b-footer">Calculo do IMC - 2025, todos os direitos reservados.</p> 
-                <p class="by"><i class="icon icon-heart-3"></i>Desenvolvido por: <a href="https://www.github.com/chaejiin" title="Leandro Chaejiin Cassimiro Assano">Leandro Chaejiin Cassimiro Assano.</a></p>
-            </div>
+
+    <div class="container">
+
+        <header class="header">
+            <a class="header__link" href="index.html">Página Inicial</a>
+            <a class="header__link" href="como_calcula_imc.html">O que é IMC?</a>
+            <a class="header__link" href="sobre.html">Sobre</a>
+        </header>
+
+        <main class="main">
+            <section class="intro">
+                <h1>Sobre o Projeto</h1>
+
+                <p>Olá! Meu nome é <strong>Leandro Assano</strong> e sou estudante de <strong>Desenvolvimento Front-End</strong>.</p>
+
+                <p>Este site foi desenvolvido como parte do projeto de avaliação da <strong>UC3</strong>, com o objetivo de auxiliar usuários no cálculo do <strong>Índice de Massa Corpórea (IMC)</strong> e, ao mesmo tempo, aplicar os conceitos de desenvolvimento web, como <strong>responsividade, acessibilidade e boas práticas de código</strong>.</p>
+
+                <h2>🔍 Por que o IMC não depende de gênero? Entenda a escolha no projeto</h2>
+
+                <p>É importante destacar que o <strong>gênero não influencia diretamente no cálculo do IMC</strong>. A fórmula do IMC utiliza apenas dois parâmetros: <strong>peso (em kg)</strong> e <strong>altura (em metros)</strong>. Portanto, independentemente de ser homem, mulher, não-binário ou qualquer identidade de gênero, o resultado matemático será o mesmo.</p>
+
+                <p>Entretanto, é verdade que <strong>diferenças biológicas, como composição de massa muscular, percentual de gordura e distribuição corporal</strong>, podem variar entre indivíduos, o que pode impactar na <strong>interpretação clínica</strong> do IMC, mas <strong>não altera o cálculo em si</strong>.</p>
+
+                <p>Por isso, pedir obrigatoriamente que a pessoa selecione apenas "masculino" ou "feminino" pode ser considerado uma prática <strong>excludente e pouco precisa</strong>, já que o IMC não depende dessa informação.</p>
+
+                <p><strong>Conclusão:</strong> O IMC é uma ferramenta de triagem populacional e deve sempre ser acompanhado de uma avaliação profissional mais detalhada, que leve em conta características individuais.</p>
+
+                <h3>🌐 Referências:</h3>
+                <ul>
+                    <li><a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank">Organização Mundial da Saúde (OMS)</a></li>
+                    <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6816772/" target="_blank">Obesity and BMI Limitations (NCBI)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/pii/S2213858721000067" target="_blank">BMI and body composition (ScienceDirect)</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Cálculo do IMC - 2025, todos os direitos reservados.</p>
+            <p>Desenvolvido por: <a href="https://www.github.com/chaejiin">Leandro Chaejiin Cassimiro Assano</a></p>
         </footer>
+
+    </div>
+
 </body>
 </html>

@@ -1,0 +1,175 @@
+/* ---------- Fonte e Fundo ---------- */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    background-image: url('../image/batata.png');    
+    background-repeat: repeat;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ---------- Header ---------- */
+.header {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 10px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.header__link {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 10px 16px;
+    border-radius: 20px;
+    margin: 4px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.header__link:hover {
+    background-color: #444;
+}
+
+/* ---------- Main ---------- */
+.main {
+    flex: 1;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.main__title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.main__description {
+    margin-bottom: 20px;
+}
+
+/* ---------- Formulário ---------- */
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form__group {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.form__input {
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form__button {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: black;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.form__button:hover {
+    background-color: #444;
+}
+
+/* ---------- Resultado ---------- */
+.resultado {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.resultado__valor {
+    color: black;
+    font-weight: bold;
+}
+
+.resultado__texto {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* ---------- Personagem e Balão ---------- */
+.personagem {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    z-index: 100;
+}
+
+.personagem__imagem {
+    width: 150px;
+}
+
+.personagem__balao {
+    position: absolute;
+    bottom: 180px;
+    right: 0;
+    background: #fff8e7;
+    border: 3px solid #333;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 250px;
+    font-size: 0.9rem;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.personagem__balao::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    right: 20px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #fff8e7 transparent transparent transparent;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 10px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.footer__copy {
+    margin: 0;
+}
+
+.footer__author {
+    margin: 0;
+}
